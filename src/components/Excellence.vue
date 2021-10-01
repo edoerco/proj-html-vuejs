@@ -108,6 +108,10 @@ export default {
         font-size: 17px;
       }
 
+      ul {
+        margin: 0 20px;
+      }
+
       span {
         color: $blue-chill;
         font-size: 15px;
