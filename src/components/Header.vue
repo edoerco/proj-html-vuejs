@@ -36,10 +36,19 @@
                 <li><a href="#">PROCESS</a></li>
                 <li><a href="#">TESTIMONIALS</a></li>
                 <li><a href="#"><i class="far fa-user"></i></a></li>
-                <li><div class="btn">GET IN TOUCH</div></li>
+                <li><button class="btn-1">GET IN TOUCH</button></li>
             </div>
           </div>
           <!-- creare il secondo div contenente il titolo i paragrafi e i due bottoni  -->
+          <div class="title">
+            <span>LOGISTICS SERVICES</span>
+            <h1>CARGO TRASPORT</h1>
+            <p>Fractional or exclusive road cargo transpotation to all regions, with small, medium and large vehicles.</p>
+            <div class="button-title">
+              <button class="btn-1">GET IN TOUCH</button>
+              <button class="btn-2">READ MORE</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -145,19 +154,53 @@ export default {
 
         }
 
-        .btn {
-          padding: 15px 25px;
-          color: $white;
-          font-weight: 500;
-          background-color: $blue-lagoon;
-          border-radius: 5px;
-          letter-spacing: 2px;
-        }
       }
     }
 
+    .title {
+      margin-top: 150px;
+      width: 600px;
+      height: 500px;
 
+      span {
+        color: $blue-chill;
+        letter-spacing: 1px;
+      }
+
+      h1 {
+        font-size: 70px;
+        color: $white;
+        margin: 10px 0 40px 0;
+      }
+
+      p {
+        color: $silver-sand;
+        font-size: 18px;
+        letter-spacing: 2px;
+        margin-bottom: 55px;
+      }
+    }
   }
 }
 
+.btn-1 {
+  padding: 15px 25px;
+  color: $white;
+  font-weight: 500;
+  background-color: $blue-lagoon;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  border: none;
+}
+
+.btn-2 {
+  padding: 15px 25px;
+  color: $white;
+  font-weight: 500;
+  background-color: transparent;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  border: $blue-lagoon solid 1px;
+  margin-left: 20px;
+}
 </style>

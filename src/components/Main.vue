@@ -16,16 +16,17 @@ import Logistical from './Logistical.vue'
 import Results from './Results.vue'
 import Services from './Services.vue'
 import Touch from './Touch.vue'
+
 export default {
     name: 'Main',
     components: { 
-        Excellence,
-        Services,
-        Logistical,
-        Results,
-        Feedback,
-        Touch,
-        },
+      Excellence,
+      Services,
+      Logistical,
+      Results,
+      Feedback,
+      Touch,
+    },
 }
 </script>
 
