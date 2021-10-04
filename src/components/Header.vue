@@ -136,6 +136,7 @@ export default {
         .gen {
           color: $silver-sand;
           letter-spacing: 5px;
+          margin-left: 5px;
         }
       }
 

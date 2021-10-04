@@ -145,13 +145,17 @@ export default {
           border: none;
           outline: none;
           background-color: $gray-nurse;
+
+          // nessun metodo trovato per cambiare il font del textarea
+          // &::placeholder {
+          //   font-size: 18px;
+          //   font-weight: 300;
+          //   }
         }
 
-        input::placeholder,
-        textarea::placeholder {
-          font-size: 18px;
-          font-weight: 300;
-        }
+        // select {
+        //   nessun metodo trovato per spostare la freccia
+        // }
 
         input,
         select {
