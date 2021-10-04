@@ -256,6 +256,10 @@ export default {
         letter-spacing: 2px;
         border: $blue-lagoon solid 1px;
         width: 160px;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
 

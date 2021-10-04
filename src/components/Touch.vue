@@ -179,6 +179,10 @@ export default {
         border: none;
         width: 100px;
         font-size: 15px;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
 
@@ -243,6 +247,10 @@ export default {
         letter-spacing: 2px;
         border: $blue-lagoon solid 1px;
         width: 150px;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }

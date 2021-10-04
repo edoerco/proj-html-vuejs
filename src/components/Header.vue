@@ -192,6 +192,10 @@ export default {
   border-radius: 5px;
   letter-spacing: 2px;
   border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .btn-2 {
@@ -203,5 +207,9 @@ export default {
   letter-spacing: 2px;
   border: $blue-lagoon solid 1px;
   margin-left: 20px;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 </style>

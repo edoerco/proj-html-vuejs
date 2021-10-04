@@ -90,7 +90,7 @@ export default {
       .services {
         display: flex;
         align-items: center;
-        background-color: rgba(03,83,84, 0.2);
+        background-color: rgba(03,83,84, 0.5);
         padding: 10px 15px;
         border-radius: 5px;
         margin-left: 10px;
@@ -118,6 +118,10 @@ export default {
           border-radius: 5px;
           letter-spacing: 2px;
           border: $blue-lagoon solid 1px;
+
+          &:hover {
+            cursor: pointer;
+          }
         }
       }
     }
