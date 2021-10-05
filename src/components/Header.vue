@@ -29,17 +29,15 @@
                 <span>GEN</span>
               </div>
             </div>
+
             <div class="nav">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">PROCESS</a></li>
-                <li><a href="#">TESTIMONIALS</a></li>
-                <li><a href="#"><i class="far fa-user"></i></a></li>
-                <li><button class="btn-1">GET IN TOUCH</button></li>
+              <ul v-for="(option, index) in options" :key="index">
+                <li><a :href="option.url"><i :class="option.icon"></i>{{option.text}}</a></li>
+              </ul>
+            <button class="btn-1">GET IN TOUCH</button>
             </div>
           </div>
-          <!-- creare il secondo div contenente il titolo i paragrafi e i due bottoni  -->
+
           <div class="title">
             <span>LOGISTICS SERVICES</span>
             <h1>CARGO TRASPORT</h1>
@@ -58,6 +56,36 @@
 <script>
 export default {
   name: 'Header',
+  data() {
+    return {
+      options: [
+        {
+          url: '#',
+          text: 'HOME',
+        },
+        {
+          url: '#',
+          text: 'ABOUT',
+        },
+        {
+          url: '#',
+          text: 'SERVICES',
+        },
+        {
+          url: '#',
+          text: 'PROCESS',
+        },
+        {
+          url: '#',
+          text: 'TESTIMONIALS',
+        },
+        {
+          url: '#',
+          icon: 'far fa-user',
+        }
+      ],
+    }
+  }
 }
 </script>
 
@@ -145,8 +173,12 @@ export default {
         justify-content: flex-end;
         align-items: center;
         list-style: none;
-        width: 95%;
+        width: 90%;
         font-weight: 500;
+
+        ul {
+          list-style: none;
+        }
 
         li a {
           margin: 0 20px;
@@ -185,13 +217,14 @@ export default {
 }
 
 .btn-1 {
-  padding: 15px 25px;
+  padding: 15px 15px;
   color: $white;
   font-weight: 500;
   background-color: $blue-lagoon;
   border-radius: 5px;
   letter-spacing: 2px;
   border: none;
+  width: 160px;
 
   &:hover {
     cursor: pointer;
@@ -199,7 +232,7 @@ export default {
 }
 
 .btn-2 {
-  padding: 15px 25px;
+  padding: 15px 15px;
   color: $white;
   font-weight: 500;
   background-color: transparent;
@@ -207,6 +240,7 @@ export default {
   letter-spacing: 2px;
   border: $blue-lagoon solid 1px;
   margin-left: 20px;
+  width: 160px;
 
   &:hover {
     cursor: pointer;
